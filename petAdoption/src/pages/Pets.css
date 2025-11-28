@@ -1,0 +1,144 @@
+.page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pets-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pet-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.filter-btn.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pet-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.pet-image {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.pet-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pet-badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 5px;
+}
+
+.badge {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.badge.trained {
+  background-color: #2196F3;
+}
+
+.pet-info {
+  padding: 10px;
+}
+
+.pet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet-details p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.pet-description {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.card-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  opacity: 0.8;
+}
+
+.adopt-btn {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.adopt-btn:hover {
+  background-color: darkorange;
+}
+
+.no-pets {
+  text-align: center;
+  grid-column: 1 / -1;
+}
